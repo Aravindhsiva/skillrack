@@ -64,41 +64,33 @@
     <pre><code style="font-size:40px;">
     Coding in Progress.....
     </code></pre>
-            <!--<pre><code>#include&lt;stdio.h&gt;
- 
-void print(long long int n)
-{
-&nbsp;&nbsp;&nbsp;&nbsp;char str[1000]; 
-&nbsp;&nbsp;&nbsp;&nbsp;int i = 0; 
-&nbsp;&nbsp;&nbsp;&nbsp;if(n==26)printf("Z");
-&nbsp;&nbsp;&nbsp;&nbsp;else{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (n&gt;0)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int rem = n%26;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (rem==0)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str[i++] = 'Z';
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = n/26;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str[i++] = (rem-1) + 'A';
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = n/26;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int j=i-1;j&gt;=0;j--){
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%c",str[j]);
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;return;
-}
-int main()
-{
-&nbsp;long long int n;
-&nbsp;scanf("%lld",&amp;n);
-&nbsp;print(n);
-&nbsp;&nbsp;&nbsp;&nbsp;return 0;
-}</code></pre>-->
+            <!--Coding Starts-->
+            <pre><code>import java.util.*;
+public class trial {
+
+&nbsp;public static void main(String[] args) {
+&nbsp;&nbsp;Scanner x = new Scanner(System.in);
+&nbsp;&nbsp;String a = x.next();
+&nbsp;&nbsp;int t;
+&nbsp;&nbsp;for(int i=0;i&lt;a.length();i++) {
+&nbsp;&nbsp;&nbsp;if(a.charAt(i)%2!=0){
+&nbsp;&nbsp;&nbsp;t= Character.getNumericValue(a.charAt(i))+1;
+&nbsp;&nbsp;&nbsp;if(t&lt;10)
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(t);
+&nbsp;&nbsp;&nbsp;else
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(0);
+&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;else{
+&nbsp;&nbsp;&nbsp;t = Character.getNumericValue(a.charAt(i))+2;
+&nbsp;&nbsp;&nbsp;if(t&lt;10)
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(t);
+&nbsp;&nbsp;&nbsp;else
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(0);
+&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;}
+&nbsp;}
+}</code></pre>
+            <!--Coding Ends-->
             <div class="jumbotron"><h2>Design & Develop | <i class="fas fa-heart"></i><span>Aravindh.S &nbsp;</span><i class="fas fa-heart"></i> |</h2></div>
     </div>
     </body>
