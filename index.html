@@ -62,30 +62,18 @@
         <div class="container text-left is-Responsive">
             <div class="jumbotron"><h2><i class="fas fa-terminal"></i>&nbsp;Today SkillRack Solution&nbsp;<i class="fas fa-code"></i></h2></div>
     <!--Codeing Starts-->
-            <pre><code>import java.util.*;
-public class Main
-{
-&nbsp;&nbsp;public static void main (String args[])
-&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;Scanner x = new Scanner (System.in);
-&nbsp;&nbsp;&nbsp;&nbsp;int n = x.nextInt ();
-&nbsp;&nbsp;&nbsp;&nbsp;int c = 0;
-&nbsp;&nbsp;&nbsp;&nbsp;String s = new String("");
-&nbsp;&nbsp;&nbsp;&nbsp;int a[] = new int[n];
-&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; n; i++)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i] = x.nextInt ();
-&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; a.length - 1; i++){
-&nbsp;if ((a[i]==a[i+1]+1)||a[i]==a[i+1]-1)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s= s+"y";
-&nbsp;&nbsp;&nbsp;else
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=s+"n";
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;if(s.contains("n"))
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print("no");
-&nbsp;&nbsp;&nbsp;&nbsp;else
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print("yes");
-&nbsp;&nbsp;}
-}</code></pre>
+            <pre><code>def rem_vowel(string): 
+&nbsp;vowels = ('a', 'e', 'i', 'o', 'u')
+&nbsp;caps = ('A', 'E', 'I', 'O', 'U')
+&nbsp;s=""
+&nbsp;for x in string: 
+&nbsp;&nbsp;if (x in vowels) or (x in caps): 
+&nbsp;&nbsp;&nbsp;s+=x
+&nbsp;&nbsp;&nbsp;string = string.replace(x, "")
+&nbsp;print (s+string)
+string = input()
+rem_vowel(string) 
+</code></pre>
             <!--Coding Ends-->
             <div class="jumbotron"><h2>Design & Develop | <i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="https://aravindhsiva.github.io" target="_blank"><img src="https://fontmeme.com/permalink/180508/bf91083fc353b2a612200c95ea6120a3.png" alt="beyno-font" border="0"></a>&nbsp;&nbsp;<i class="fas fa-heart"></i> |</h2></div>
     </div>
