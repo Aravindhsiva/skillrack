@@ -1,3 +1,3 @@
 # Skillrack Solutions
-<h4>By Aravindh</h4>&hearts;
+<h4>By Aravindh<span>&hearts;</span></h4>
 
