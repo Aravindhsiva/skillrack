@@ -1,3 +1,3 @@
 # Skillrack Solutions
-By Aravindh&emsp;&hearts;&hearts;
+<h2>By Aravindh&emsp;&hearts;&hearts;</h2>
 
