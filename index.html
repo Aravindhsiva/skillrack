@@ -69,18 +69,16 @@
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
             <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">15-11-2018</kbd><br><br>
            <!--Coding Starts-->
-            <pre><code>def poda(arr, n): 
-&nbsp;for i in range(0, n): 
-&nbsp;&nbsp;d = 0
-&nbsp;&nbsp;for j in range(0, i): 
-&nbsp;&nbsp;&nbsp;if (arr[i] == arr[j]): 
-&nbsp;&nbsp;&nbsp;&nbsp;d = 1
-&nbsp;&nbsp;&nbsp;&nbsp;break
-&nbsp;&nbsp;if (d == 0):
-&nbsp;&nbsp;&nbsp;print(arr[i],end=" ") 
-n = int(input())
-arr = list(map(int, input().strip().split()))
-poda(arr, n)</code></pre>
+            <pre><code>import math
+n,x=map(int,input().split())
+sum,ctr,c= 0,1,0
+l = input()
+a = map(int,l.split())
+for i in a:
+&nbsp;&nbsp;&nbsp;&nbsp;if(c&lt;n):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += math.pow(x,i)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c+=1
+print(int(sum/x))</code></pre>
             <!--Coding Ends-->
             <div class="jumbotron"><h2>Design & Develop | <i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="https://aravindhsiva.github.io" target="_blank"><img src="https://fontmeme.com/permalink/180508/bf91083fc353b2a612200c95ea6120a3.png" alt="beyno-font" border="0"></a>&nbsp;&nbsp;<i class="fas fa-heart"></i> |</h2></div>
     </div>
