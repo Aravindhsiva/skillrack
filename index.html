@@ -65,21 +65,38 @@
     <body>
         <div class="container text-left is-Responsive">
             <div class="jumbotron"><h2><i class="fas fa-terminal"></i>&nbsp;Today SkillRack Solution&nbsp;<i class="fas fa-code"></i></h2></div>
-            <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
-            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">20-12-2018</kbd><br><br>
+            <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Java</kbd><br><br>
+            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">22-12-2018</kbd><br><br>
            <!--Coding Starts-->
-<pre><code>def rem(a):
-&nbsp;&nbsp;&nbsp;&nbsp;f,s = [],set()
-&nbsp;&nbsp;&nbsp;&nbsp;for v in a:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if v not in s:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.append(v)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s.add(v)
-&nbsp;&nbsp;&nbsp;&nbsp;return f
-m,n = map(list,input().split())
-m,n = rem(map(int,m)),rem(map(int,n))
-a,b = sum(m),sum(n)
-if(a==b):print("YES")
-else:print("NO")</code></pre>
+<pre><code>import java.util.Scanner;
+
+public class go {
+&nbsp;static void as(int arr[] , int n)
+&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i=0,temp=0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0 ; i&lt;n/2 ; i++){
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = arr[i];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[i] = arr[n-i-1];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[n-i-1] = temp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;}
+&nbsp;public static void main(String[] args) {
+&nbsp;&nbsp;Scanner x = new Scanner(System.in);
+&nbsp;&nbsp;int n = x.nextInt();
+&nbsp;&nbsp;int a[] = new int[n];
+&nbsp;&nbsp;int b[] = new int[n];
+&nbsp;&nbsp;for(int i=0;i&lt;n;i++) {
+&nbsp;&nbsp;&nbsp;a[i] = x.nextInt();
+&nbsp;&nbsp;&nbsp;b[i] = a[i];
+&nbsp;&nbsp;}
+&nbsp;&nbsp;as(b,n);
+&nbsp;&nbsp;for(int i=0;i&lt;n;i++) {
+&nbsp;&nbsp;&nbsp;String g = String.valueOf(a[i]);
+&nbsp;&nbsp;&nbsp;String h = String.valueOf(b[i]);
+&nbsp;&nbsp;&nbsp;System.out.print(g.substring(0, g.length()-1)+h.substring(h.length()-1, h.length())+" ");
+&nbsp;&nbsp;}
+&nbsp;}
+}</code></pre>
             <!--Coding Ends-->
             <div class="jumbotron"><h2>Credits | <i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="https://aravindhsiva.github.io" target="_blank"><img src="https://fontmeme.com/permalink/181130/ae11ae4c28e8bc1b1ea3564b155aa097.png" alt="beyno-font" border="0"></a>&nbsp;&nbsp;<i class="fas fa-heart"></i> |</h2></div>
     </div>
