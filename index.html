@@ -68,29 +68,15 @@
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Java</kbd><br><br>
             <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">16-1-2019</kbd><br><br>
            <!--Code Starts-->
-<pre><code>import java.util.Scanner;
-import java.math.*;
-public class midrev {
-&nbsp;static String rev(String s) {
-&nbsp;&nbsp;StringBuilder r = new StringBuilder();
-&nbsp;&nbsp;r.append(s);
-&nbsp;&nbsp;r.reverse();
-&nbsp;&nbsp;return r.toString();
-&nbsp;}
-&nbsp;public static void main(String[] args) {
-&nbsp;&nbsp;Scanner x = new Scanner(System.in);
-&nbsp;&nbsp;String s = x.next();
-&nbsp;&nbsp;int n = x.nextInt();
-&nbsp;&nbsp;String c = s.substring(0,s.length()/2);
-&nbsp;&nbsp;String d = s.substring(s.length()/2,s.length());
-&nbsp;&nbsp;String f = c.substring(c.length()-n/2,c.length());
-&nbsp;&nbsp;String g = d.substring(0,n-(int)Math.floor(n/2));
-&nbsp;&nbsp;String rev = rev(f+g);
-&nbsp;&nbsp;int rem = (int)Math.floor(s.length()/2) - (int)Math.floor(n/2);
-&nbsp;&nbsp;System.out.println(s.substring(0,rem)+rev+s.substring(s.length()-rem,s.length()));
-&nbsp;}
-}
-</code></pre>
+<pre><code>isv = lambda c : c in 'aeiou' or c in 'AEIOU'
+for i in input():
+&nbsp;&nbsp;&nbsp;&nbsp;if(isv(i)):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(ord(i)&lt;96):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i.lower(),end="")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i.upper(),end="")
+&nbsp;&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i,end="")</code></pre>
             <!--Code Ends-->
             <div class="jumbotron"><h2>Credits | <i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="https://aravindhsiva.github.io" target="_blank"><img src="https://fontmeme.com/permalink/181130/ae11ae4c28e8bc1b1ea3564b155aa097.png" alt="beyno-font" border="0"></a>&nbsp;&nbsp;<i class="fas fa-heart"></i> |</h2></div>
     </div>
