@@ -66,13 +66,12 @@
         <div class="container text-left is-Responsive">
             <div class="jumbotron"><h2><i class="fas fa-terminal"></i>&nbsp;Today SkillRack Solution&nbsp;<i class="fas fa-code"></i></h2></div>
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
-            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">19-1-2019</kbd><br><br>
+            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">20-1-2019</kbd><br><br>
            <!--Code Starts-->
-<pre><code>a = input()
-for i in range(0,len(a)):
-&nbsp;&nbsp;&nbsp;&nbsp;for j in range(0,i+1):
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(a[i],end="")
-&nbsp;&nbsp;&nbsp;&nbsp;print()</code></pre>
+<pre><code>def isp(n):
+&nbsp;&nbsp;&nbsp;&nbsp;return 2 in [n,2**n%n]
+a = int(input())
+print("valid") if isp(a) or a%2==0 else print("invalid")</code></pre>
             <!--Code Ends-->
             <div class="jumbotron"><h2>Credits | <i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="https://aravindhsiva.github.io" target="_blank"><img src="https://fontmeme.com/permalink/181130/ae11ae4c28e8bc1b1ea3564b155aa097.png" alt="beyno-font" border="0"></a>&nbsp;&nbsp;<i class="fas fa-heart"></i> |</h2></div>
     </div>
