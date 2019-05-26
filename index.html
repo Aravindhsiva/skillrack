@@ -68,9 +68,15 @@
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
             <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">24-5-2019</kbd><br><br>
            <!--Code Starts-->
-<pre><code>n = int(input())
-a = list(map(int,input().split(" ")))
-print(*a[int(len(a)/2)-1 : int(len(a)/2)+2]) if(n%2!=0) else print(*a[int(len(a)/2)-2 : int(len(a)/2)+2])</code></pre>
+<pre><code>a,n  = input().split(" ")
+isc = lambda d : d not in 'aeiou'
+x,y,l,r = a[0:int(n)],a[-int(n)::],0,0
+for i in range(0,int(n)):
+&nbsp;&nbsp;&nbsp;&nbsp;if(isc(x[i])):l+=1
+&nbsp;&nbsp;&nbsp;&nbsp;if(isc(y[i])):r+=1
+if(l&gt;r):print(x)
+elif(l&lt;r):print(y)
+else:print(a)</code></pre>
             <!--Code Ends-->
     </div>
     </body>
