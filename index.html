@@ -66,13 +66,13 @@
         <div class="container text-left is-Responsive">
             <div class="jumbotron"><h2><i class="fas fa-terminal"></i>&nbsp;Today SkillRack Solution&nbsp;<i class="fas fa-code"></i></h2></div>
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
-            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">29-5-2019</kbd><br><br>
+            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">10-6-2019</kbd><br><br>
            <!--Code Starts-->
-<pre><code>a,s = input(),""
-n = int(input())
-for i in range(1,len(a)+1):
-&nbsp;&nbsp;&nbsp;&nbsp;if(i%n==0):s+=a[i-1]
-print(s[::-1])</code></pre>
+<pre><code>def hd(s1,s2):
+&nbsp;&nbsp;&nbsp;&nbsp;return sum(ch1!=ch2 for ch1,ch2 in zip(s1,s2))
+a = input()
+b = input()
+print(hd(a,b))</code></pre>
             <!--Code Ends-->
     </div>
     </body>
