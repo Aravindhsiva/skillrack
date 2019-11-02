@@ -66,18 +66,19 @@
         <div class="container text-left is-Responsive">
             <div class="jumbotron"><h2><i class="fas fa-terminal"></i>&nbsp;Today SkillRack Solution&nbsp;<i class="fas fa-code"></i></h2></div>
             <p style="font-size:18px;">Language Used : </p><kbd class="kbd" style="padding:4px;font-size:16px;">Python</kbd><br><br>
-            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">19-6-2019</kbd><br><br>
+            <p style="font-size:18px;">Last Updated : </p><kbd class="kbd" style="padding:4px;font-size:16px;">02-11-2019</kbd><br><br>
            <!--Code Starts-->
-<pre><code>n,a,o,e = int(input()),list(map(int,input().split(" "))),[],[]
-for i in a:
-&nbsp;&nbsp;&nbsp;&nbsp;if(i%2==0):e.append(i)
-&nbsp;&nbsp;&nbsp;&nbsp;else:o.append(i)
-if(len(o)&gt;len(e)):
-&nbsp;&nbsp;&nbsp;&nbsp;print(*o[::-1]+e)
-elif(len(o)&lt;len(e)):
-&nbsp;&nbsp;&nbsp;&nbsp;print(*e[::-1]+o)
-else:
-&nbsp;&nbsp;&nbsp;&nbsp;print(*a[::-1])</code></pre>
+<pre><code>a = input()
+def decrypt(c):
+&nbsp;&nbsp;&nbsp;&nbsp;j,g=1,[]
+&nbsp;&nbsp;&nbsp;&nbsp;for i in range(len(c)):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(c[0:j]!=''):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.append(c[0:j])
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c=c[j:len(c)-1]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j+=1
+&nbsp;&nbsp;&nbsp;&nbsp;return g
+for i in decrypt(a):
+&nbsp;&nbsp;&nbsp;&nbsp;print(i[0],end="")</code></pre>
             <!--Code Ends-->
     </div>
     </body>
